@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="{% url 'one:index' %}">首页</a>
+<br>
+<a href="{% url 'one:studentlist' 2 %}">学生列表</a>
+<br>
+<a href="{% url 'one:studentlist2' tid=5 %}">学生列表2</a>
+
+<img src="{% static 'images/ORM2.jpeg' %}" alt="" style="width: 200px;">
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<form action="/one/register/" method="post">
+    {% csrf_token %}
+    姓名：<input type="text" name="sname" placeholder="请输入学生姓名"> <br>
+    班级：<input type="radio" name="team" value="1805">1805
+         <input type="radio" name="team" value="1806">1806 <br>
+    兴趣：<input type="checkbox" name="hobby" value="1">打游戏
+         <input type="checkbox" name="hobby" value="2">敲代码
+         <input type="checkbox" name="hobby" value="3">漂亮妹子 <br>
+    <input type="submit" value="提交">
+
+</form>
+</body>
+</html>
